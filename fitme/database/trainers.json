@@ -1,0 +1,153 @@
+{
+    "users": [
+      {
+          "id": 1,
+          "name": "Blazej",
+          "purchses": [
+              {
+                  "tId": 1,
+                  "trainingType": "Begginer",
+                  "exercises": [
+                      "Pushups",
+                    "Barbell hip bridge",
+                    "Deadbug",
+                    "Dumbbell lunge",
+                    "Renegade row"
+                ]
+              }
+          ]
+      }  
+    ],
+    "trainers": [
+        {
+          "id": 1,
+          "name": "Blazej",
+          "surname": "Szafranski",
+          "age": 24,
+          "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+          "trainings": [
+            {
+                "type": "Begginer",
+                "numberOfExercises": 5,
+                "exercises": [
+                    "Pushups",
+                    "Barbell hip bridge",
+                    "Deadbug",
+                    "Dumbbell lunge",
+                    "Renegade row"
+                    ] 
+                },
+                {
+                    "type": "Advanced",
+                    "numberOfExercises": 5,
+                    "exercises": [
+                        "Pushups",
+                        "Barbell hip bridge",
+                        "Deadbug",
+                        "Dumbbell lunge",
+                        "Renegade row",
+                        "Pushups",
+                        "Barbell hip bridge",
+                        "Deadbug",
+                        "Dumbbell lunge",
+                        "Renegade row"
+                        ] 
+                },
+                {
+                    "type": "Proffesional",
+                    "numberOfExercises": 5,
+                    "exercises": [
+                        "Pushups",
+                        "Barbell hip bridge",
+                        "Deadbug",
+                        "Dumbbell lunge",
+                        "Renegade row"
+                        ] 
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Tomasz",
+            "surname": "Kowalski",
+            "age": 30,
+            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
+            "imgURL": "fitme/src/photos/profile.jpg",
+            "trainings": [
+              {
+                  "type": "Begginer",
+                  "numberOfExercises": 5,
+                  "exercises": [
+                      "Pushups",
+                      "Barbell hip bridge",
+                      "Deadbug",
+                      "Dumbbell lunge",
+                      "Renegade row"
+                    ] 
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Maria",
+            "surname": "Kądzielska",
+            "age": 20,
+            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+            "trainings": [
+              {
+                  "type": "Begginer",
+                  "numberOfExercises": 5,
+                  "exercises": [
+                      "Pushups",
+                      "Barbell hip bridge",
+                      "Deadbug",
+                      "Dumbbell lunge",
+                      "Renegade row"
+                    ] 
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Adam",
+            "surname": "Smith",
+            "age": 43,
+            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+            "trainings": [
+              {
+                  "type": "Begginer",
+                  "numberOfExercises": 5,
+                  "exercises": [
+                      "Pushups",
+                      "Barbell hip bridge",
+                      "Deadbug",
+                      "Dumbbell lunge",
+                      "Renegade row"
+                    ] 
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Tom",
+            "surname": "Cruise",
+            "age": 18,
+            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+            "trainings": [
+              {
+                  "type": "Begginer",
+                  "numberOfExercises": 5,
+                  "exercises": [
+                      "Pushups",
+                      "Barbell hip bridge",
+                      "Deadbug",
+                      "Dumbbell lunge",
+                      "Renegade row"
+                    ] 
+                }
+            ]
+        }            
+    ]
+}
+
+   
