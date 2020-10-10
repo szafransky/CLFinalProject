@@ -1,10 +1,11 @@
 import React from 'react'
 import '../scss/Font.scss'
 import LoginForm from './LoginForm'
+import '../scss/AboutStyle.scss'
 
 function About() {
     return (
-        <div>
+        <div className="about">
             
             <h2 style={{textAlign: "center"}}>About</h2>
             <p style={{padding: "10px 40px 10px 40px"}}>

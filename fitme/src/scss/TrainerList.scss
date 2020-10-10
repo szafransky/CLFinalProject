@@ -1,4 +1,16 @@
 
+html, body {
+  min-height: 100%;
+}
+
+
+
+.trainer-list {
+  position: relative;
+  min-height: 83vh;
+  // max-width: 700px;
+
+}
 
   .icon {
     display: flex;
@@ -20,9 +32,12 @@
   }
 
   .trainer {
-    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+
+    // box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
     margin: 20px 40px 0 40px;
+    
     
   }
 

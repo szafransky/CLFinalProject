@@ -7,6 +7,8 @@ import About from './About'
 import {Route, Switch } from "react-router-dom";
 import LoginForm from './LoginForm'
 import UserProfile from './UserProfile'
+import UserForm from './UserForm'
+import CreateUserForm from './CreateUserForm'
 
 function Routes() {
 
@@ -20,6 +22,8 @@ function Routes() {
                     <Route path="/trainerProfile/:id" component={TrainerProfile} />
                     <Route path="/login" component={LoginForm} />
                     <Route path="/user" component={UserProfile} />
+                    <Route path="/userForm" component={UserForm} />
+                    <Route path="/addUser" component={CreateUserForm} />
                 </Switch>
             {/* </Router> */}
         </div>

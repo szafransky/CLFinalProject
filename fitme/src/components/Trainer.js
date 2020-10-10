@@ -4,16 +4,16 @@ import history from './history'
 import profileImg from '../photos/profile.jpg'
 import '../scss/TrainerList.scss'
 
-function Trainer({id, name, surname, age, imgURL, trainings}) {
+function Trainer({id, name, surname, age, photo, trainings}) {
 
     const showProfile = () => {
         history.push(`/trainerProfile/${id}`)
     }
-    console.log(imgURL)
+    // console.log(imgURL)
 
     return (
-        <div  className="trainer" onClick={showProfile} style={{padding: "10px 0 10px 30px" ,display: "flex",marginBottom: "10px", cursor: "pointer"}}>
-            <div style={{width: "100px", height: "100px", background: "red", borderRadius: "50%"}}><img style={{width: "100%", borderRadius: "50%"}} src={profileImg} alt="FitMe Welcome page"></img></div>
+        <div  className="trainer" onClick={showProfile} style={{padding: "10px 0 10px 30px" ,display: "flex",marginBottom: "10px", cursor: "pointer", alignItems: "center"}}>
+            <div style={{ height: "100px", borderRadius: "50%"}}><img style={{width: "100px", height: "100px", borderRadius: "50%"}} src={photo} alt="FitMe Welcome page"></img></div>
             <div className="trainer-info" style={{paddingLeft: "40px"}}>
             <h3>{name} {surname} </h3>
             <h4 style={{lineHeight: "0px"}}>Age: {age}</h4>

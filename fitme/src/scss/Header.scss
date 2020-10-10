@@ -1,95 +1,149 @@
+html, body {
+  min-height: 100%;
+}
+
 .home {
         
-    .bg {
-        height: 700px;
-        
-        background-image: url('../photos/fitMeWelcome.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+   
 }
 
 .header {
+    
     display: flex;
+    
     justify-content: space-between;
     background-color: #ffffff;
     padding: 0px 40px;
-
+  .desktop {
+    display: flex;
+    justify-content: space-between;
     .nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  }
 
-        .container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-        }
-      
-      .menu-icon {
-        display: grid;
-        place-items: center;
-        height: 55px;
-        width: 50px;
-        position: relative;
-        cursor: pointer;
-        
-        & > span {
-          width: 50px;
-          height: 3px;
-          background: red;
-          display: block;
-          transition: all 0.3s ease-in-out;
-        }
-        
-        &:hover span:nth-child(1) {
-          width: 35px;
-        }
-        
-        &:hover span:nth-child(2) {    
-          width: 40px;
-        }
-        
-        &.active span:nth-child(1) {
-          transform-origin: center center;
-          transform: rotate(-45deg) translate(-12px, 12px);
-          width: 55px;
-        }
-        
-        &.active span:nth-child(2) {
-          transform: translateX(10px);
-          opacity: 0;
-        }
-        
-        &.active span:nth-child(3) {
-          transform-origin: center center;
-          transform: rotate(45deg) translate(-15px, -14px);
-          width: 55px;
-        }
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  }
+   
+
+    .menu-container {
+      display: none;
+    }
+     
+    
+
        
-        .line-1 {
-          width: 42px;
-          justify-self: end;
-        }
+      
+     
+    @media (max-width: 501px) {
+      .header {
+        display: inline-block;
         
-        .line-2 {
-          width: 35px;
-          justify-self: end;
-        }
       }
 
-    @media (max-width: 501px) {
+      .desktop{
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
         .nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
+          display: flex;  //zmienione tutaj dla Mobilki
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      }
+
+      .mobile {
+        display: flex;
+       
+        .nav {
+          display: flex;  //zmienione tutaj dla Mobilki
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      }
+
+      
+       
+
+        .menu-container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          .menu-icon {
+            display: grid;
+            place-items: center;
+            height: 30px;
+            width: 40px;
+            position: relative;
+            cursor: pointer;
+            
+            & > span {
+              width: 35px;
+              height: 2px;
+              background: #1f8fff;
+              display: block;
+              transition: all 0.3s ease-in-out;
+              justify-self: end;
+            }
+            
+            // &:hover span:nth-child(1) {
+            //   width: 35px;
+            // }
+            
+            // &:hover span:nth-child(2) {    
+            //   width: 40px;
+            // }
+            
+            // &.active span:nth-child(1) {
+            //   transform-origin: center center;
+            //   transform: rotate(-45deg) translate(-12px, 12px);
+            //   width: 35px;
+            // }
+            
+            // &.active span:nth-child(2) {
+            //   transform: translateX(10px);
+            //   opacity: 0;
+            // }
+            
+            // &.active span:nth-child(3) {
+            //   transform-origin: center center;
+            //   transform: rotate(45deg) translate(-15px, -14px);
+            //   width: 55px;
+            // }
+           
+            .line-1 {
+              width: 30px;
+              justify-self: end;
+            }
+            
+            .line-2 {
+              width: 30px;
+              justify-self: end;
+            }
+          }
+    
+      }
 
         & {
+
+          .logo-burger {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
             display: flex;
             align-items: center;
             justify-content: center;

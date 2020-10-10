@@ -1,153 +1,315 @@
 {
-    "users": [
-      {
-          "id": 1,
-          "name": "Blazej",
-          "purchses": [
-              {
-                  "tId": 1,
-                  "trainingType": "Begginer",
-                  "exercises": [
-                      "Pushups",
-                    "Barbell hip bridge",
-                    "Deadbug",
-                    "Dumbbell lunge",
-                    "Renegade row"
-                ]
-              }
+  "users": [
+    {
+      "id": 1,
+      "name": "Blazej",
+      "photo": "../photos/szafranski_photo copy.jpg",
+      "metrics": [
+        "90",
+        "190",
+        "80"
+      ],
+      "purchses": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
           ]
-      }  
-    ],
-    "trainers": [
-        {
-          "id": 1,
-          "name": "Blazej",
-          "surname": "Szafranski",
-          "age": 24,
-          "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-          "trainings": [
-            {
-                "type": "Begginer",
-                "numberOfExercises": 5,
-                "exercises": [
-                    "Pushups",
-                    "Barbell hip bridge",
-                    "Deadbug",
-                    "Dumbbell lunge",
-                    "Renegade row"
-                    ] 
-                },
-                {
-                    "type": "Advanced",
-                    "numberOfExercises": 5,
-                    "exercises": [
-                        "Pushups",
-                        "Barbell hip bridge",
-                        "Deadbug",
-                        "Dumbbell lunge",
-                        "Renegade row",
-                        "Pushups",
-                        "Barbell hip bridge",
-                        "Deadbug",
-                        "Dumbbell lunge",
-                        "Renegade row"
-                        ] 
-                },
-                {
-                    "type": "Proffesional",
-                    "numberOfExercises": 5,
-                    "exercises": [
-                        "Pushups",
-                        "Barbell hip bridge",
-                        "Deadbug",
-                        "Dumbbell lunge",
-                        "Renegade row"
-                        ] 
-                }
-            ]
         },
         {
-            "id": 2,
-            "name": "Tomasz",
-            "surname": "Kowalski",
-            "age": 30,
-            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
-            "imgURL": "fitme/src/photos/profile.jpg",
-            "trainings": [
-              {
-                  "type": "Begginer",
-                  "numberOfExercises": 5,
-                  "exercises": [
-                      "Pushups",
-                      "Barbell hip bridge",
-                      "Deadbug",
-                      "Dumbbell lunge",
-                      "Renegade row"
-                    ] 
-                }
-            ]
+          "type": "Proffesional",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
         },
         {
-            "id": 3,
-            "name": "Maria",
-            "surname": "Kądzielska",
-            "age": 20,
-            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
-            "trainings": [
-              {
-                  "type": "Begginer",
-                  "numberOfExercises": 5,
-                  "exercises": [
-                      "Pushups",
-                      "Barbell hip bridge",
-                      "Deadbug",
-                      "Dumbbell lunge",
-                      "Renegade row"
-                    ] 
-                }
-            ]
+          "type": "Advanced",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row",
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Filip",
+      "photo": "../photos/filip.png",
+      "metrics": [
+        "190",
+        "100",
+        "90"
+      ],
+      "purchses": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
         },
         {
-            "id": 4,
-            "name": "Adam",
-            "surname": "Smith",
-            "age": 43,
-            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-            "trainings": [
-              {
-                  "type": "Begginer",
-                  "numberOfExercises": 5,
-                  "exercises": [
-                      "Pushups",
-                      "Barbell hip bridge",
-                      "Deadbug",
-                      "Dumbbell lunge",
-                      "Renegade row"
-                    ] 
-                }
-            ]
+          "type": "Advanced",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row",
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Andrzej",
+      "photo": "../photos/filip.png",
+      "metrics": [
+        "100",
+        "20",
+        "200"
+      ],
+      "purchses": []
+    },
+    {
+      "id": 4,
+      "name": "Roxann",
+      "photo": "../photos/filip.png",
+      "metrics": [
+        "160",
+        "45",
+        "50"
+      ],
+      "purchses": []
+    },
+    {
+      "id": 5,
+      "name": "Jacek",
+      "photo": "../photos/filip.png",
+      "metrics": [
+        "182",
+        "70",
+        "65"
+      ],
+      "purchses": []
+    },
+    {
+      "id": 6,
+      "name": "Robert",
+      "photo": "../photos/filip.png",
+      "metrics": [
+        "190",
+        "80",
+        "79"
+      ],
+      "purchses": []
+    },
+    {
+      "id": 7,
+      "name": "Artur",
+      "photo": "../photos/filip.png",
+      "metrics": [
+        "190",
+        "100",
+        "90"
+      ],
+      "purchses": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    }
+  ],
+  "trainers": [
+    {
+      "id": 1,
+      "name": "Blazej",
+      "surname": "Szafranski",
+      "age": 24,
+      "photo": "../photos/szafranski_photo copy.jpg",
+      "about": "Moje życie z większymi lub mniejszymi przerwami zawsze kręciło się wokół sportu. Doświadczenie ze starej, dobrej szkoły lekkoatletycznej przeniosłem na pracę w zawodzie instruktora sportów siłowych i skoncentrowałem się na pracy w siłowni. Każdy dzień pracy z klientami jest dla mnie wyzwaniem, które, będąc niepoprawnym pracoholikiem, chętnie podejmuję, ale do swojej pracy podchodzę z dużą pokorą. Nauczyłem się, że w moim zawodzie największym błędem jest przeświadczenie, że 'wiem najlepiej'.",
+      "trainings": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
         },
         {
-            "id": 5,
-            "name": "Tom",
-            "surname": "Cruise",
-            "age": 18,
-            "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-            "trainings": [
-              {
-                  "type": "Begginer",
-                  "numberOfExercises": 5,
-                  "exercises": [
-                      "Pushups",
-                      "Barbell hip bridge",
-                      "Deadbug",
-                      "Dumbbell lunge",
-                      "Renegade row"
-                    ] 
-                }
-            ]
-        }            
-    ]
+          "type": "Advanced",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row",
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        },
+        {
+          "type": "Proffesional",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tomasz",
+      "surname": "Kowalski",
+      "age": 30,
+      "photo": "../photos/trainer4.jpg",
+      "about": "Ukończyłem wiele lat temu Politechnikę Łódzką i jestem inżynierem mechanikiem. Do fitnessu trafiłem, jak wiele osób, drogą – od pasji do zawodu jednak niewielu udało się zadebiutować, mając ukończone lat 50. Jestem przykładem, że można, że ograniczenia są do przejścia, cały czas się uczę i mam kolejne plany. Nie wiem, czy jestem najstarszym instruktorem w Łodzi, ale staram się podnieść średnią wieku, a kontakt z młodszym pokoleniem daje mi mnóstwo energii i radości. Jestem cały czas aktywny sportowo – biegam maratony i biegi ultra, biegam i wspinam się w górach, startuję w triathlonie. Specjalizuję się w treningu prozdrowotnym i medycznym i oczywiście w treningu dla  mojej kategorii 'oldies but goldies'.",
+      "trainings": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Maria",
+      "surname": "Kądzielska",
+      "age": 20,
+      "photo": "../photos/trainerMaria.jpg",
+      "about": "Jestem absolwentką Uniwersytetu Łódzkiego. Finanse i Rachunkowość oraz Zarządzanie to dziedziny, które pochłonęły kilka lat mojego życia. Umysł ścisły jednak nie wyklucza mojego zamiłowania do sportu i aktywnego trybu życia. Przygodę z fitnessem zaczęłam za granicą, to tam zrodziła się pasja, zamiłowanie i sposób na życie. Do moich ulubionych form zajęć należą Indoor Cycling oraz Step. Dlaczego? Dlatego, że każdą z tych lekcji można stworzyć tak, aby była niepowtarzalna. A oznacza to, że przez 365 dni w roku nuda nie ma wstępu na nasze zajęcia :). Jestem osobą pogodną i pełną energii o czym – mam nadzieję – sami się przekonacie!",
+      "trainings": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Adam",
+      "surname": "Gmyz",
+      "age": 43,
+      "photo": "../photos/trainer2.jpg",
+      "about": "Cześć, mam na imię Adam. Jestem studentem dietetyki w Wyższej Szkole Biznesu i Nauk o Zdrowiu. Ze sportem mam styczność od 7 roku życia. Wtedy właśnie rodzice zapisali mnie na karate w stylu Shotokan. Przygoda z tą dyscypliną trwała 7 lat. Następnie 2 lata trenowałem koszykówkę, 1 rok tenis ziemny i 2 lata Jeet Kune Do (system walki stworzony przez Bruce'a Lee). Po tym czasie zainteresowałem się sportem siłowo-sylwetkowym i ogólnie rozumianą aktywnością fizyczną, która towarzyszy mi do dziś. Moją drugą pasją jest dietetyka w szczególności dietetyka sportowa i dieto terapia chorób o podłożu autoimmunologicznym. Po zdobyciu niżej wymienionych certyfikatów i przetestowaniu wiedzy (którą stale pogłębiam) na sobie, doszedłem do wniosku, że czas najwyższy podzielić się tą wiedzą z Wami. Treningi ze mną są bezpieczne, efektywne i naładowane pozytywną energią. Skierowane są do każdej grupy wiekowej z uwzględnieniem fizycznych możliwości.",
+      "trainings": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Robert",
+      "surname": "Kosy",
+      "age": 18,
+      "photo": "../photos/trainer1.jpg",
+      "about": "Jestem absolwentem Wyższej Szkoły Sportowej w Łodzi. Specjalizuję się w przygotowaniu motorycznym sportowców oraz zarządzaniu w sporcie. Na co dzień zajmuję się przygotowaniem fizycznym zawodników AKS SMS Łódź oraz treningami personalnymi i grupowymi w klubie. Jestem także studentem AWFiS w Gdańsku na kierunku wychowanie fizyczne.Od najmłodszych lat jestem związany ze sportem, dlatego bycie aktywnym z czasem przerodziło się w zawód. Chcę podzielić się z Wami tym, jak przyjemna może być praca, gry robisz coś z pasji, a nie z przymusu!",
+      "trainings": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Wojciech",
+      "surname": "Matczak",
+      "age": 18,
+      "photo": "../photos/trener6.jpg",
+      "about": "Jestem absolwentem Wyższej Szkoły Sportowej w Łodzi. Specjalizuję się w przygotowaniu motorycznym sportowców oraz zarządzaniu w sporcie. Na co dzień zajmuję się przygotowaniem fizycznym zawodników AKS SMS Łódź oraz treningami personalnymi i grupowymi w klubie. Jestem także studentem AWFiS w Gdańsku na kierunku wychowanie fizyczne.Od najmłodszych lat jestem związany ze sportem, dlatego bycie aktywnym z czasem przerodziło się w zawód. Chcę podzielić się z Wami tym, jak przyjemna może być praca, gry robisz coś z pasji, a nie z przymusu!",
+      "trainings": [
+        {
+          "type": "Begginer",
+          "numberOfExercises": 5,
+          "exercises": [
+            "Pushups",
+            "Barbell hip bridge",
+            "Deadbug",
+            "Dumbbell lunge",
+            "Renegade row"
+          ]
+        }
+      ]
+    }
+  ]
 }
-
-   

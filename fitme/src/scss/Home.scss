@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+  }
+
+.home {
+    // position: relative;
+    // min-height: 100vh;
+    .container {
+        height:auto !important;
+        min-height:100%;
+      
+        padding-bottom: 10px; 
+    }
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.137);
+}
+
+.slide1 {
+    height: 600px;
+    background-image: url('../photos/slide1.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+   
+
+    h2 {
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        font-size: 70px;
+        
+    }
+
+    p {
+        width: 300px;
+        color: white;
+        text-align: center;
+    }
+}
+
+.slide2 {
+    height: 500px;
+    background-image: url('../photos/slide2.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+
+    .box {
+        background: rgba(0, 0, 0, 0.267);
+    }
+    p {
+        width: 350px;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+.slide3 {
+    height: 500px;
+    background-image: url('../photos/slide4.jpg');
+    background-position: bottom;
+    background-size: cover;
+
+    @media (min-width: 1200px) {
+
+        & {
+           
+                background-position: 50% 85%;
+            
+        }
+        
+    }
+
+    p {
+        padding-top: 35px;
+        width: 350px;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+}

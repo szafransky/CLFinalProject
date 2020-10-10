@@ -31,13 +31,16 @@ const fetchAllTrainers =  () => {
                 </div>
         }
     return (
-        <div >
-            <h2 style={{textAlign: "center", marginBottom: "60px"}}>Our trainers</h2>
-             {trainers.map((trainer,index) => {
+        <div className="list-container">
+            <div className="trainer-list">
+                <h2 style={{textAlign: "center", marginBottom: "60px"}}>Our trainers</h2>
+                {trainers.map((trainer,index) => {
                 //  return <li key={index}>{trainer.name}</li>
-                 return <Trainer  key={trainer.id} {...trainer} />
-             })}
+                     return <Trainer  key={trainer.id} {...trainer} />
+                })}
+            </div>
         </div>
+       
     )
 }
 

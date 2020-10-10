@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import {BrowserRouter, Route, Switch } from "react-router-dom";
 // import TrainersList from './TrainersList';
 // import About from './About';
@@ -13,20 +13,50 @@ import '../scss/Font.scss'
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function Header( {title} ) {
+
+
+
+    const [open, setOpen] = useState(false);
+    console.log(open);
+
+    const getDisplayState = () => {
+        setOpen(false);
+    }
+
+    const handleClick = () => {
+        setOpen(!open);
+        console.log("Clicked")
+        
+    }
+
+    const showHome = () => {
+        history.push(`/`)
+    }
     return (
        
         <Router history={history}>
         <div className="header">
-            <h1 style={{textAlign:"center"}}>{title}</h1>
-            
-            <Navigation />
-            {/* <div class="container">
+            <div className="logo-burger">
+                <div style={{cursor: "pointer"}}>
+                <h1 style={{cursor: "pointer"}} onClick={showHome} style={{textAlign:"center"}}>{title}</h1>
+                </div>
+           
+            <div class="menu-container" onClick={handleClick}>
                 <div class="menu-icon">
                     <span class="line-1"></span>
                     <span class="line-2"></span>
                     <span class="line-3"></span>
                 </div>
-            </div> */}
+            </div>
+            </div>
+
+           <div className={open ? "mobile" : "desktop"}>
+           <Navigation status={open} onClick={handleClick}/>
+           {/* <Navigation/> */}
+           </div>
+           
+           
+           
                
         </div>
         <Routes />

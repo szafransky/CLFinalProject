@@ -1,12 +1,40 @@
+html, body {
+    min-height: 100%;
+  }
+
+.login {
+    position: relative;
+    min-height: 85vh;
+
+
+}
+
+.user-form {
+    position: relative;
+    min-height: 85vh;
+}
+
 .form-style{
+    
+    @media (max-width: 550px) {
+        & {
+            width: 250px;
+        }
+    }
 	font-family: 'Open Sans Condensed', arial, sans;
 	width: 300px;
 	padding: 30px;
 	background: #FFFFFF;
-	margin: 50px auto;
+	margin: 50px auto 0px auto;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+
+.create-user {
+    display: flex;
+    justify-content: center;
 }
 
 .form-input {
@@ -47,4 +75,37 @@
     text-transform: uppercase;
     margin-left: 35%;
     border-radius: 20px;
+}
+
+.container{
+    .name-and-age {
+        h3 {
+            margin-top: 20px;
+            
+        }
+
+        .metrics {
+            border: 1px solid grey;
+            border-radius: 20px;
+
+            h4 {
+                margin: 5px;
+            }
+
+            button {
+                margin-top: 20px
+            }
+        }
+    }
+}
+
+.metrics {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 20px;
 }
