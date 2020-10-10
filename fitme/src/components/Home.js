@@ -15,7 +15,7 @@ function Main() {
             <div className="container">
                 <div className="slide1">
                     <div className="box">
-                    <h2 style={{cursor: "pointer"}}>FitMe</h2>
+                    <h2 >FitMe</h2>
                     <p>Your personal trainer in one app</p>
                     </div>
                    

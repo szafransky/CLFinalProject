@@ -14,6 +14,7 @@ const [height, setHeight] = useState();
 const [weight, setWeight] = useState();
 const [waist, setWaist] = useState();
 const [count, setCount] = useState();
+const [error, setError] = useState();
 
 const fetchUsers = async () => {
 
@@ -30,10 +31,14 @@ const showUserProfile = () => {
 
 const addUser = async (event) => {
     event.preventDefault()
-    // const trainingType =  e.target.parentNode.dataset.value;
-    // const chosenTraining = trainer.trainings.filter(training => training.type === trainingType);
-    console.log("owdnwindinjwnejednji")
-    // console.log(chosenTraining);
+
+    let includenum = /\d/;
+    if(includenum.test(name)) {
+        
+        setError("Imię może zawierać tylko litery");
+        return;
+    }
+    
     await fetch(`http://localhost:3000/users`, {
     method: "POST",
     body: JSON.stringify( 
@@ -64,7 +69,7 @@ const addUser = async (event) => {
      })
     .catch(error => {
       console.log(error);
-    //   console.log(training);
+    
       
     });
     showUserProfile();
@@ -78,6 +83,12 @@ useEffect(() => {
 }, [])
 
 
+const handleName = (e) => {
+    setError("");
+    setName(e.target.value)
+}
+
+
 
 
     return (
@@ -86,7 +97,7 @@ useEffect(() => {
             <form onSubmit={(e) => {addUser(e)}} className="form-style">
             <h2 style={{textAlign: "center"}}>Create new user</h2>
             <input value={name}  onChange={(e) => {
-                setName(e.target.value);
+               handleName(e);
                 
             }} 
                 className="form-input" 
@@ -95,7 +106,7 @@ useEffect(() => {
             <input value={height}  onChange={(e) => {setHeight(e.target.value)}} className="form-input" placeholder="Height"></input>
             <input value={weight}  onChange={(e) => {setWeight(e.target.value)}} className="form-input" placeholder="Weight"></input>
             <input value={waist}  onChange={(e) => {setWaist(e.target.value)}} className="form-input" placeholder="Waist"></input>
-            
+            {error && <p style={{color:"red", fontSize: "15px"}}>Popełniłes błąd: {error}</p>}
             <button name="submit" className="form-button">Submit</button>
             </form>
            

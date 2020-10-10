@@ -9,8 +9,9 @@ function UserForm() {
     const [height, setHeight] = useState();
     const [weight, setWeight] = useState();
     const [waist, setWaist] = useState();
+    const [error, setError] = useState("");
 
-    
+    // let loggedHeight = "232";
     
 
     const showUserProfile = () => {
@@ -28,9 +29,25 @@ function UserForm() {
 
      const addMetricsToUser = async (event) => {
         event.preventDefault()
-        // const trainingType =  e.target.parentNode.dataset.value;
-        // const chosenTraining = trainer.trainings.filter(training => training.type === trainingType);
-        console.log("owdnwindinjwnejednji")
+       
+        let isnum = /^\d+$/;
+        if(!isnum.test(height)) {
+            
+            setError("Only numbers!");
+            return;
+        }
+
+        if(!isnum.test(weight)) {
+            
+            setError("Only numbers!");
+            return;
+        }
+
+        if(!isnum.test(waist)) {
+           
+            setError("Only numbers!");
+            return;
+        }
         // console.log(chosenTraining);
         await fetch(`http://localhost:3000/users/${user.id}`, {
         method: "PUT",
@@ -65,23 +82,42 @@ function UserForm() {
                 return u.name === localStorage.getItem('name');
             });
             console.log(loggedName[0]);
-
+            // loggedHeight = loggedName[0].metrics[0];
+            // console.log(loggedHeight)
             setUser(loggedName[0]);
+            setHeight(loggedName[0].metrics[0])
+            setWeight(loggedName[0].metrics[1])
+            setWaist(loggedName[0].metrics[2])
         })
 
-        console.log(user);
+      
         
     }, [])
+
+    const handleHeight = (e) => {
+        setError("");
+        setHeight(e.target.value);
+    }
+
+    const handleWeight = (e) => {
+        setError("");
+        setWeight(e.target.value);
+    }
+
+    const handleWaist = (e) => {
+        setError("");
+        setWaist(e.target.value);
+    }
 
     return (
         <div className="user-form">
           
             <form onSubmit={(e) => {addMetricsToUser(e)}} className="form-style">
             <h2 style={{textAlign: "center"}}>Your metrics</h2>
-            <input value={height}  onChange={(e) => {setHeight(e.target.value)}} className="form-input" placeholder="Height"></input>
-            <input value={weight}  onChange={(e) => {setWeight(e.target.value)}} className="form-input" placeholder="Weight"></input>
-            <input value={waist}  onChange={(e) => {setWaist(e.target.value)}} className="form-input" placeholder="Waist"></input>
-            
+            <input value={height}  onChange={(e) => {handleHeight(e)}} className="form-input" placeholder="Height"></input>
+            <input value={weight}  onChange={(e) => {handleWeight(e)}} className="form-input" placeholder="Weight"></input>
+            <input value={waist}  onChange={(e) => {handleWaist(e)}} className="form-input" placeholder="Waist"></input>
+            {error && <p style={{color:"red"}}>Popełniłes błąd: {error}</p>}
             <button name="submit" className="form-button">Submit</button>
             </form>
            
